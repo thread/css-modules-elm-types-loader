@@ -1,0 +1,32 @@
+{
+  "name": "@teamthread/css-modules-elm-types-loader",
+  "version": "0.1.0",
+  "description": "Generate Elm type aliases for CSS Modules",
+  "main": "src/index.js",
+  "author": "Thread",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "src/"
+  ],
+  "scripts": {
+    "webpack-test": "webpack --config webpack-test/webpack.config.js --mode development",
+    "lint": "prettier '{src, __tests__, webpack-test}/**/*.js' --list-different",
+    "lint-fix": "prettier '{src, __tests__, webpack-test}/**/*.js' --write",
+    "test": "yarn run lint && jest"
+  },
+  "jest": {
+    "testRegex": "/__tests__/.*\\.js$"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "elm-format": "^0.7.0-exp",
+    "jest": "^22.4.3",
+    "prettier": "^1.12.1",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2"
+  },
+  "peerDependencies": {
+    "css-loader": "^0.28.11"
+  }
+}
