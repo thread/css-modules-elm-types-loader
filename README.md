@@ -19,6 +19,37 @@ loader: 'css-loader'
 loader: '@teamthread/css-modules-elm-types-loader'
 ```
 
+## File naming
+
+Given a file with this CSS at the path shown:
+
+```css
+/* path: /app/LikedItems/liked_items.module.scss */
+.likedItems {
+  color: red
+}
+
+.likedItemsHeader {
+  color: blue
+}
+```
+
+This plugin will generate the following Elm file:
+
+```elm
+-- /app/LikedItems/Styles.elm
+
+module LikedItems.Styles exposing (Styles)
+
+type alias Styles = {
+    likedItems: String
+    ,likedItemsHeader: String
+}
+```
+
+This has been created to suit how we're loading our CSS with JavaScript and applying it to Elm (via flags). We'd love to make this plugin more generic and useful to all; so please feel free to open an issue with thoughts on how we could improve this.
+
+
 ## Options
 
 Any loader options are passed through to `css-loader`.
