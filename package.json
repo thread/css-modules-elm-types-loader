@@ -23,10 +23,13 @@
     "elm-format": "^0.8.2",
     "jest": "^24.8.0",
     "prettier": "^1.18.2",
-    "webpack": "^4.6.0",
-    "webpack-cli": "^2.1.2"
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
   },
   "peerDependencies": {
     "css-loader": "^0.28.11"
+  },
+  "resolutions": {
+    "js-yaml": "3.13.1"
   }
 }
