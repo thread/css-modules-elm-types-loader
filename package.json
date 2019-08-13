@@ -20,9 +20,9 @@
   },
   "devDependencies": {
     "css-loader": "^0.28.11",
-    "elm-format": "^0.7.0-exp",
-    "jest": "^22.4.3",
-    "prettier": "^1.12.1",
+    "elm-format": "^0.8.2",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.1.2"
   },
